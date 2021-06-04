@@ -10,25 +10,42 @@ export default class PersonList extends React.Component {
   state = {
     persons: []
   }
-
-  componentDidMount() {
-    axios.get(`https://randomuser.me/api/`)
-      .then(res => {
-        const persons = data.results;
-        this.setState({ persons });
-      })
+  
+     componentDidMount() {
+      axios.get(`https://jsonplaceholder.typicode.com/users`)
+        .then(res => {
+          const persons = res.data;
+          this.setState({ persons });
+        })
+    }
+  
+    render() {
+      return (
+        <ul>
+          { this.state.persons.map(person => <li>{person.name}</li>)}
+        </ul>
+      )
+    }
   }
 
-  render() {
-    return (
-      // <ul>
-      //   { this.state.persons.map(person => <li>{person.name}</li>)}
-      // </ul>
-      <ul>
-        <li>
-          {persons}
-        </li>
-      </ul>
-    )
-  }
-}
+//   componentDidMount() {
+//     axios.get(`https://randomuser.me/api/`)
+//       .then(res => {
+//         const persons = data.results;
+//         this.setState({ persons });
+//       })
+//   }
+
+//   render() {
+//     return (
+//       // <ul>
+//       //   { this.state.persons.map(person => <li>{person.name}</li>)}
+//       // </ul>
+//       <ul>
+//         <li>
+//           {persons}
+//         </li>
+//       </ul>
+//     )
+//   }
+// }
