@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KACE,iBACF,CAGA,8CACE,UACE,mDAA4C,CAA5C,2CACF,CACF","file":"main.1d6478f3.chunk.css","sourcesContent":[".App {\n  text-align: center;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n\n\n"]}
