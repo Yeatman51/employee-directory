@@ -4,17 +4,15 @@
 
 Github: https://github.com/Yeatman51
 
-Repository: https://github.com/Yeatman51/budget-tracker-pwa
+Repository: https://github.com/Yeatman51/employee-directory
 
-Live Demo: https://budget-tracker-pwa-jy.herokuapp.com/
+Live Demo: https://yeatman51.github.io/employee-directory/
 
 ---
 
 ## Description:
 
-This budget tracker utilizes mongo DB to store user Inputted data. This user data is then charted below and for an added visual there is a graph that will dynamically display as new data has been saved to the application.
-
-This application also utilizes the PWA structure so The user is able to continue to add new data points when you were off-line.
+This application was created using React and will randomly generate new employee profiles for you to view. These profiles are generated from the random user API. As a user you have the ability to restructure and organize the list of employees
 
 
-![Budget Tracker Graph](img/budget-tracker.png)
+![Budget Tracker Graph](./public/img/budget-tracker.png)
