@@ -3,16 +3,17 @@
 
 // const randomUser = "https://randomuser.me/api/";
 
-import React from 'react';
+
 import axios from 'axios';
 
 let API = {
-    getRandomEmployees: function() {
-        return axios.get("https://randomuser.me/api/?results=100&seed=banana");
+    getAPI: function() {
+        return axios.get("https://randomuser.me/api/?results=10");
     }
 };
 
 export default API;
+
 
 // export default class PersonList extends React.Component {
 //   state = {
