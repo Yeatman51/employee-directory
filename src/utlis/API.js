@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 // import axios from "axios";
 
 // const randomUser = "https://randomuser.me/api/";
@@ -13,6 +13,18 @@ const API = {
 };
 
 export default API;
+
+// componentDidMount(){
+
+//   fetch("https://randomuser.me/api/?results=25")
+//   .then((response) => response.json())
+//   .then((response) => {
+//     this.setState({
+//       items:response.results,
+//       loading:true
+//     })
+//   })
+// };
 
 
 // export default class PersonList extends React.Component {

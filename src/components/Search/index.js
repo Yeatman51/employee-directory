@@ -1,13 +1,19 @@
 import React from 'react';
 
-function Search() {
+function Search(props) {
     return (
     <div>
         <form>
-        <input type="text" placeholder="Search.."></input>
+            <input 
+            value={props.search} 
+            onChange={props.handleInputChange} 
+            type="text" 
+            placeholder="Search..">
+            </input>
+            
         </form>
     
-        <button type='submit'>
+        <button className='btn btn-primary' type='submit' onClick={props.handleFormSubmit}>
             Search
         </button>
     </div>
