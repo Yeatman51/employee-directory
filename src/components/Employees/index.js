@@ -1,16 +1,21 @@
 import React from 'react';
+import Person from "../../../src/components/Person";
 import API from "../../../src/utlis/API";
 
 function Employees(props) {
     return (
     <div>
-        {props.users.map(result => (
-        <ul>
-            <li>{result.name.first}</li>
-            <li>{result.name.last}</li>
+       {filteredEmployees.map(props =>{
+        return (
+          <div>
+            key={props.id} 
+            firstName={Person.name.first} 
+            LastName={props.name.last} 
+            image={props.image}
             
-        </ul>
-        ))}
+          </div>
+        );
+      })}
     </div>
     );
 }        
