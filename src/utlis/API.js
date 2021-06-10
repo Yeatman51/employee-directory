@@ -1,30 +1,34 @@
 import React from 'react';
-// import axios from "axios";
+import Axios from "axios";
+
+
+
+// function API() {
+//   const getAPI = () => {
+//     Axios.get("https://randomuser.me/api/?results=25").then(
+//       (response)=> {
+//       console.log(response);
+//     }
+//   );
+// }
+
+// export default API;
+
+// console.log(response);
+// console.log(API);
+// console.log(getAPI);
+
 
 // const randomUser = "https://randomuser.me/api/";
 
-
-import axios from 'axios';
-
 const API = {
     getAPI: function() {
-        return axios.get("https://randomuser.me/api/?results=25");
+        return Axios.get("https://randomuser.me/api/?results=25");
     }
 };
 
 export default API;
-
-// componentDidMount(){
-
-//   fetch("https://randomuser.me/api/?results=25")
-//   .then((response) => response.json())
-//   .then((response) => {
-//     this.setState({
-//       items:response.results,
-//       loading:true
-//     })
-//   })
-// };
+// console.log(API);
 
 
 // export default class PersonList extends React.Component {
@@ -48,25 +52,5 @@ export default API;
 //       )
 //     }
 //   }
-
-//   componentDidMount() {
-//     axios.get(`https://randomuser.me/api/`)
-//       .then(res => {
-//         const persons = data.results;
-//         this.setState({ persons });
-//       })
-//   }
-
-//   render() {
-//     return (
-//       // <ul>
-//       //   { this.state.persons.map(person => <li>{person.name}</li>)}
-//       // </ul>
-//       <ul>
-//         <li>
-//           {persons}
-//         </li>
-//       </ul>
-//     )
-//   }
 // }
+
